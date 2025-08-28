@@ -79,7 +79,47 @@
 
     <!-- Right Image -->
     <div class="flex justify-center md:justify-end">
-      <img src="./images/pet.webp" alt="Dog and Cat" class="w-full max-w-md md:max-w-lg lg:max-w-xl pt-10">
+      <!-- <img src="./images/pet.webp" alt="Dog and Cat" class="w-full max-w-md md:max-w-lg lg:max-w-xl pt-10"> -->
+   <div class="carousel w-full">
+  <div id="slide1" class=" carousel-item relative w-full  m-auto py-8">
+    <img
+      src="./images/pet.webp"
+      class=" w-[92%] h-[360px] lg:w-[60%] md:w-[60%] md:h-[450px] lg:h-[450px] justify-center items-center m-auto" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full">
+    <img
+      src="./images/pet2.webp"
+       class=" w-[100%] h-[300px] lg:w-[60%] md:w-[60%] md:h-[450px] lg:h-[450px] justify-center items-center m-auto" />
+      
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide3" class="carousel-item relative w-full">
+    <img
+      src="./images/pet3.webp"
+       class=" w-[100%] h-[300px] lg:w-[60%] md:w-[60%] md:h-[450px] lg:h-[450px] justify-center items-center m-auto" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide4" class="carousel-item relative w-full">
+    <img
+      src="./images/pet4.webp"
+       class=" w-[100%] h-[300px] lg:w-[60%] md:w-[60%] md:h-[450px] lg:h-[450px] justify-center items-center m-auto" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -93,35 +133,34 @@
   <div id="categories"  class="pt-12 py-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-[160px] w-11/12 mx-auto">
     
   </div>
- 
+  
 </section> 
 
 
 <!-- pates section  -->
  <main>
-
-   <div class="flex items-center justify-between w-11/12 m-auto">
+  <div class="flex items-center justify-between w-11/12 m-auto">
     <div>
         <p class="text-base font-bold ">Best Deal For you</p>
     </div>
     <div>
-        <button id class="btn  hover:bg-[#0E7A81] hover:text-white">Sort by Price</button>
+        <button id="sortBtn" class="btn  hover:bg-[#0E7A81] hover:text-white">Sort by Price</button>
     </div>
-    </div>
+  </div>
     <section class="w-11/12 mx-auto py-10 flex flex-col lg:flex-row gap-4">
-    
 
         <div id="pets" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 flex-1">
 
         </div>
 
-      <div class="card bg-base-100  border border-gray-400 m-auto lg:mt-[0px] gap-2 shadow-xl w-80 h-96 lg:w-[380px] lg:h-[600px] md:w-[600px] md:h-[600px]   p-4">
-        <div id="addCard" class=" grid grid-cols-4 gap-3 ">
+      <div class="card bg-base-100  border border-gray-400 m-auto lg:mt-[0px] gap-2 shadow-xl w-80 h-96 lg:w-[380px] lg:h-[850px] md:w-[600px] md:h-[850px]  p-4">
+        <div id="addCard" class=" grid grid-cols-3 gap-3 ">
         </div>
       </div>
 
     </section>
  </main>
+
 
  <!-- detail modal add section  -->
   <!-- Modal -->
@@ -137,8 +176,6 @@
   </div>
 </dialog>
 
-
-<!-- model 2 Adopt area start  -->
  <!-- Adopt Modal -->
 <input type="checkbox" id="adopt-modal" class="modal-toggle" />
 <div class="modal" role="dialog">
@@ -151,9 +188,8 @@
   </div>
 </div>
 
-
-
-<script src="./help.js"></script> 
+  <script src="./script.js"></script>  
+<!-- <script src="./help.js"></script>  -->
 
 </body>
 </html>
